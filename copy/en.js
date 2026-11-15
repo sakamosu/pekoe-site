@@ -49,6 +49,9 @@ window.PEKOE_COPY.en = {
   "s2.inbox.o2": "don't approve",
   "s2.st5.title": "You merge",
   "s2.st5.body": "Reading the PR and merging it is yours: pekoe never merges on its own. Once it's merged, pekoed notices and cleans up the worktree, and tapi closes the request in the ledger with the PR attached.",
+  "s2.st6.title": "Check the evidence, then decide",
+  "s2.st6.body": "Screenshots, videos, logs and the PR attached to a report open from the dashboard: select the session's row in the pipeline and press <code>o</code> to list them. A PNG shows up right there in kitty-graphics terminals. A file whose contents don't match its extension isn't opened; you're shown where it is instead. Before you merge, you can check the work yourself.",
+  "s2.st6.alt": "tapi holding up a checklist",
 
   // [3] tapi
   "s3.meet": "Meet tapi.",

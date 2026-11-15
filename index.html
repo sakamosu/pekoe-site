@@ -163,8 +163,22 @@ $ pekoe report "CSV export, PR #131" --status done \
         </div>
       </div>
 
-      <div class="step" id="d-merge">
-        <div><div class="num">05 <b>you</b><span class="st c-ok">✓ merged</span></div><h3 data-i18n="s2.st5.title"></h3><p data-i18n="s2.st5.body"></p></div>
+      <div class="step" id="d-evidence">
+        <div><div class="num">05 <b>you</b><span class="st c-sec">o</span></div><h3 data-i18n="s2.st6.title"></h3><p data-i18n="s2.st6.body"></p></div>
+        <div class="pinned"><span class="slot pin"><img class="slot-img" src="assets/tapi-evidence.webp" alt="" data-i18n-attr="alt=s2.st6.alt"><img class="slot-fb" src="assets/tapi-done.webp" alt="" data-i18n-attr="alt=s2.st6.alt"></span><div class="shot modal-shot"><b class="t-pri">Evidence</b><span class="t-dim"> feat-csv · 2 in 1 report</span>
+
+  <b>#1</b> <span class="t-ok">done</span><span class="t-dim"> · 2m · </span>CSV export, PR #131
+<b class="t-pri">›</b>   <span class="t-sec">image</span>  csv-export.png  <span class="t-dim">png 1280×800 · 84 kB</span>
+    <span class="t-sec">link </span>  https://github.com/you/app/pull/131
+
+<span class="t-dim">  ~/shots/csv-export.png</span>
+<span class="t-dim">  ↵ shows it here · o opens it in Preview</span>
+
+<span class="t-dim"><b class="t-sec">j/k</b> move  <b class="t-sec">↵</b> open  <b class="t-sec">o</b> open in app  <b class="t-sec">esc</b> close</span></div></div>
+      </div>
+
+      <div class="step flip" id="d-merge">
+        <div><div class="num">06 <b>you</b><span class="st c-ok">✓ merged</span></div><h3 data-i18n="s2.st5.title"></h3><p data-i18n="s2.st5.body"></p></div>
         <div class="shot">$ gh pr merge 131            <span class="t-dim"># you, or the Merge button</span>
 <span class="t-ok">✓</span> merged     feat/csv → main
 <span class="t-dim">pekoed</span>  <span class="t-ok">✓</span> teardown → rm ~/worktrees/app/feat-csv
@@ -172,14 +186,6 @@ $ pekoe report "CSV export, PR #131" --status done \
 <span class="t-dim">tapi</span>    feat-csv merged. fix-invoice-pdf is next.</div>
       </div>
 
-      <!-- マージしてよいかの根拠を pekoed が揃えて受信箱に出す(本体では実装済み。サイトではまだ出していない)。
-           出すときは下の <template> を step として差し込み、assets/tapi-evidence.webp と copy の s2.st6.* を足す -->
-      <template id="slot-evidence">
-        <div class="step flip" id="d-evidence">
-          <div><div class="num">06 <b>pekoed</b></div><h3 data-i18n="s2.st6.title"></h3><p data-i18n="s2.st6.body"></p></div>
-          <div class="pinned"><span class="slot pin"><img class="slot-img" src="assets/tapi-evidence.webp" alt=""><img class="slot-fb" src="assets/tapi-done.webp" alt=""></span><div class="shot"></div></div>
-        </div>
-      </template>
     </fieldset>
 
     <!-- [3] tapi -->
