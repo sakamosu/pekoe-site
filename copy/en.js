@@ -64,7 +64,7 @@ window.PEKOE_COPY.en = {
   "s4.h2": "Want to step in yourself? The house is set up for that too.",
   "s4.lead": "You can type into any session, any time. Creating sessions in the TUI and running them yourself, without tapi, works just as before. Sessions and worktrees on the left, the agent's own screen on the right.",
   "s4.st1.title": "Make a worktree",
-  "s4.st1.body": "Give it a branch name and the agent starts working in a worktree that's already set up. Give it an issue number instead and the issue body becomes the first prompt. Write the setup steps once per repo, then feel free to forget them. The agent's model and effort can be set in the config, or picked per session.",
+  "s4.st1.body": "Give it a branch name and the agent starts working in a worktree that's already set up. Give it an issue number instead and the issue body becomes the first prompt. Write the setup steps once per repo, then feel free to forget them. For Claude Code agents, the model and effort can be set in the config or picked per session.",
   "s4.st2.title": "Answer a wait",
   "s4.st2.body": "Every agent's state lines up in one pane. <code>]a</code> jumps straight to the one stopped on a permission or a question, and <code>[a</code> takes you back to where you were. Close the terminal and the agents keep running inside tmux.",
   "s4.st3.title": "Read the diff",
