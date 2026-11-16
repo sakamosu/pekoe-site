@@ -101,7 +101,7 @@ window.PEKOE_COPY.en = {
   "s6.svg_aria": "pekoed, its six clients, and one pty per worktree",
 
   // [7] install
-  "s7.lead": "pekoe runs on macOS (developed and tested in Ghostty; Linux builds are published too, but parts of them are untested). Homebrew installs the default build, without the Web UI, on macOS and Linux (arm64 / amd64), and pulls in tmux and git as dependencies. You'll need tmux 3.3 or later, git, and the agent you run: Claude Code, or codex, opencode and others. Building from source also needs Go 1.27.4 or later. For the Web UI, build with <code>make install WEB=1</code> or install the <code>_web</code> archive from a release. Optional: gh (issues, landing, PR view and review), Neovim 0.10 or later (review screen), Chrome (element picking with the extension, and the in-TUI preview), Tailscale (Web UI).",
+  "s7.lead": "pekoe runs on macOS and Linux. You can install it with Homebrew. To use the Web UI, build with <code>make install WEB=1</code> or install the <code>_web</code> archive from a release.",
   "s7.c1": "# adds hooks to ~/.claude/settings.json",
   "s7.c2": "# optional: start pekoed at login",
   "s7.c3": "# detect the repo and draft its config",

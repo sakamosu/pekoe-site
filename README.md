@@ -6,8 +6,8 @@ pekoe のランディングページ。ページ自体が pekoe の TUI の文�
 index.html     構造。文言は data-i18n="key" で参照するだけ
 style.css      見た目。カラートークンは docs/ui-guidelines.md の値
 app.js         tapi の描画、タブとステータスバーの追従、キー操作(1-7 / j k / [ ] / g G / i / ? / l / m)、画像の差し込み枠、言語切り替え、デモ動画の再生制御
-copy/ja.js     日本語コピー(key → 文)
-copy/en.js     英語コピー
+copy/en.js     英語コピー(key → 文)
+copy/ja.js     日本語コピー
 assets/        ステッカー(WebP、背景は切り抜き済み)とデモ動画(pekoe-demo.webm / .mp4 / -poster.jpg)
 scripts/check-copy.mjs  en / ja のキーと index.html の参照の照合(npm run check:copy)
 build.py       配布用の 1 枚 HTML を dist-single/ に生成
@@ -32,7 +32,7 @@ vite.config.js ローカル開発サーバーと GitHub Pages 向けビルド(di
 
 ## 編集
 
-- 文言を直す → `copy/ja.js` / `copy/en.js` の値を直す。キーは両ファイルで揃える
+- 文言を直す → `copy/en.js` / `copy/ja.js` の値を直す。キーは両ファイルで揃える
 - 文言を増やす → `index.html` に `data-i18n="新キー"` の要素を置き、両方の copy にキーを足す。属性は `data-i18n-attr="alt=key"`
 - 画像を差し替える → `assets/` の同名ファイルを置き換える(下の「画像を差し替える」)
 - コピーを直したら `npm run check:copy` で en / ja のキーの過不足と index.html の参照を照合する
