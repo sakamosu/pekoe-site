@@ -12,6 +12,6 @@
 ## リポジトリ概要
 
 - pekoe の静的 LP。`index.html`(構造)/ `style.css`(見た目)/ `app.js`(挙動)
-- 文言は `copy/ja.js` と `copy/en.js`。キーは両ファイルで揃える
+- 文言は `copy/en.js` と `copy/ja.js`。キーは両ファイルで揃える
 - main への push で GitHub Pages にデプロイされる
 - 詳細は README.md

@@ -102,7 +102,7 @@ window.PEKOE_COPY.ja = {
   "s6.svg_aria": "pekoed と 6 つのクライアント、worktree ごとの pty の関係図",
 
   // [7] install
-  "s7.lead": "pekoe は macOS で動きます(開発と確認は Ghostty で。Linux 向けのビルドも出していますが、一部は確かめていません)。Homebrew で入れると、macOS と Linux(arm64 / amd64)に Web UI の入らない既定のビルドが入り、tmux と git も依存として入ります。必要なのは tmux 3.3 以上、git、動かすエージェント(Claude Code、または codex・opencode など)です。ソースからビルドするなら Go 1.27.4 以上も要ります。Web UI を使うときは <code>make install WEB=1</code> でビルドするか、リリースの <code>_web</code> アーカイブを入れてください。あれば使うもの: gh(issue の取り込み、land、PR の表示とレビュー)、Neovim 0.10 以上(レビュー画面)、Chrome(拡張機能での要素の選択、TUI 内のプレビュー)、Tailscale(Web UI)。",
+  "s7.lead": "pekoe は macOS と Linux で動きます。Homebrew からインストールできます。Web UI を使うときは <code>make install WEB=1</code> でビルドするか、リリースの <code>_web</code> アーカイブを入れてください。",
   "s7.c1": "# ~/.claude/settings.json に hooks を追加",
   "s7.c2": "# 任意: ログイン時に pekoed を起動",
   "s7.c3": "# リポジトリを検出して設定を下書き",
