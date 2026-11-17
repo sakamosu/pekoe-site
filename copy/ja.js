@@ -99,6 +99,7 @@ window.PEKOE_COPY.ja = {
   "s6.pr4": "ターミナル層は tmux で動いています。判断はデーモンが受け持ち、クライアントは表示と入力しか持たないので、層を差し替えても機能は減りません。",
   "s6.daemon_h": "すべては pekoed を通る",
   "s6.daemon": "TUI、CLI、Neovim、Chrome 拡張、MCP、Web UI は、どれも同じ API を叩く表示層です。機能を足すときは、デーモンを触れば済みます。",
+  "s6.daemon_alt": "三又の槍を持った、デーモン姿の tapi",
   "s6.svg_aria": "pekoed と 6 つのクライアント、worktree ごとの pty の関係図",
 
   // [7] install
