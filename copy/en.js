@@ -98,6 +98,7 @@ window.PEKOE_COPY.en = {
   "s6.pr4": "The terminal layer runs on tmux. The daemon makes the decisions and clients only handle display and input, so a layer can be swapped without losing features.",
   "s6.daemon_h": "everything talks to pekoed",
   "s6.daemon": "TUI, CLI, Neovim, the Chrome extension, MCP and the Web UI are all display layers hitting the same API. Adding a feature only means touching the daemon.",
+  "s6.daemon_alt": "tapi dressed as a daemon, holding a trident",
   "s6.svg_aria": "pekoed, its six clients, and one pty per worktree",
 
   // [7] install

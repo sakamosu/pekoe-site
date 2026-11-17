@@ -265,6 +265,10 @@ kbd.k{display:inline-block;font-family:var(--mono);font-size:12px;font-weight:70
 .lead-row .lead{flex:1;margin:0}
 .rules-slot{flex:0 0 96px;transform:rotate(5deg)}
 .rules-slot img{filter:drop-shadow(0 10px 16px rgba(20,8,70,.35))}
+.daemon-row{display:flex;align-items:center;gap:16px;margin:0 0 14px}
+.daemon-row p{flex:1;margin:0}
+.daemon-slot{flex:0 0 96px;transform:rotate(-5deg)}
+.daemon-slot img{filter:drop-shadow(0 10px 16px rgba(20,8,70,.35))}
 
 /* principles */
 .pr{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:12px 0;border-top:1px solid var(--border-dim);font-size:14.5px}
@@ -417,6 +421,7 @@ table.where td code{font-size:12.5px}
   /* 04: 説明側のキッカー行の右、見出しの右上の空きに置く。下端が見出しの行にかからない高さ */
   .pin-side>.pin{margin:0;top:-104px;right:0}
   .rules-slot{flex-basis:150px}
+  .daemon-slot{flex-basis:130px}
 
   /* house rules は逆向き: きまりの一覧 左 / 説明 右。pekoed の図は全幅 */
   #s6{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);column-gap:56px;align-items:start}
@@ -424,7 +429,7 @@ table.where td code{font-size:12.5px}
   #s6>h2{grid-column:2;grid-row:2}
   #s6>.lead-row{grid-column:2;grid-row:3}
   #s6>.rules{grid-column:1;grid-row:1 / span 4;margin-top:0}
-  #s6>h3,#s6>p:not(.lead),#s6>.archwrap{grid-column:1 / -1}
+  #s6>h3,#s6>p:not(.lead),#s6>.daemon-row,#s6>.archwrap{grid-column:1 / -1}
   #s6>h3{margin-top:48px}
   .pr{grid-template-columns:150px 1fr;gap:16px}
 
