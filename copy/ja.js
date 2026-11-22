@@ -38,10 +38,10 @@ window.PEKOE_COPY.ja = {
   "s2.inbox_alt": "受信箱の手紙を届ける tapi",
   "s2.rep.hello": "feat-csv 終わったよ、PR #131 出てる。",
   "s2.rep.h1": "決定が必要",
-  "s2.rep.d1": "· 受信箱 #7: fix-invoice-pdf が、発行済みの請求書 PDF 1,204 件を作り直していいか聞いてる(]a)",
+  "s2.rep.d1": "· 受信箱 q7: fix-invoice-pdf が、発行済みの請求書 PDF 1,204 件を作り直していいか聞いてる(]a)",
   "s2.rep.d2": "· PR #131 feat-csv はマージできるよ(CI 緑・独立レビュー合格・衝突なし)",
   "s2.rep.h2": "今やっていること",
-  "s2.rep.n1": "· #7 の答えを待ってる",
+  "s2.rep.n1": "· q7 の答えを待ってる",
   "s2.rep.h3": "進行中",
   "s2.rep.p1": "· fix-invoice-pdf  wait  レイアウトは直した。作り直しの承認待ち",
   "s2.rep.p2": "· feat-csv  PR #131  CSV エクスポート、テスト 42 件",
@@ -79,11 +79,12 @@ window.PEKOE_COPY.ja = {
   // [5] anywhere
   "s5.h2": "スマホからも、答えて、頼める。",
   "s5.lead": "Web UI(任意のビルド。Tailscale の tailnet の中だけ)を iPhone のホーム画面に置けば、外出先から次のことができます。",
-  "s5.c1": "<strong>見る</strong>: セッションの一覧と状態、エージェントの画面。Overview タブでは概要と工程表(<code>impl → review → PR → CI → merge</code>)も見られます。",
-  "s5.c2": "<strong>答える</strong>: 許可には allow / deny で(押す前に確認が出ます)、質問にはキーパッドで選択肢を選んで答えます。短い指示も送れます。",
-  "s5.c3": "<strong>決める</strong>: Inbox タブから受信箱の問いに答えます。事実とリンクが先に、エージェントの文は後に出ます。",
-  "s5.c4": "<strong>頼む</strong>: tapi chat から tapi に頼めます。送る前に宛先と全文を確かめるシートが出ます(既定)。送れるのは端末を <code>allow_devices</code> で絞ったときだけです。",
-  "s5.desk": "Mac の前では、TUI で tapi の行を選ぶとダッシュボードが開き、受信箱・工程表・自分の依頼が 1 画面に並びます。",
+  "s5.c1": "<strong>見る</strong>: 下端のタブバーで Now・Sessions・tapi の 3 画面を切り替えます。Now には人が見るべきもの・tapi の直近の発言・依頼の進み・マージの結果がまとまり、依頼から開く Flow で工程表(<code>impl → review → PR → CI → merge</code>)も見られます。Sessions は状態で分けた一覧で、エージェントの画面も読めます。",
+  "s5.c2": "<strong>答える</strong>: 許可には allow / deny で(押す前に確認が出ます)、質問にはキーパッドで選択肢を選んで答えます。短い指示も送れて、写真やスクショを 4 枚まで添えられます。",
+  "s5.c3": "<strong>決める</strong>: Now から受信箱の問いを開いて答えます。事実とリンクが先に、エージェントの文は後に出て、送る前に確認が出ます。",
+  "s5.c4": "<strong>頼む</strong>: tapi の画面(tapi chat)から tapi に頼めます。画像も添えられます。送る前に宛先と全文を確かめるシートが出ます(既定)。送れるのは端末を <code>allow_devices</code> で絞ったときだけです。",
+  "s5.ipad": "iPad を横にして幅が 700px 以上になると、左に Now / Sessions のレールが出て、Now は 3 列、Sessions は一覧の横にチャットが並びます。",
+  "s5.desk": "Mac の前では、TUI で tapi の行を選ぶとダッシュボードが開き、受信箱・工程表・自分の依頼が 1 画面に並びます。<code>pekoe gui</code> を打てば、Mac のブラウザで使うローカル GUI も開きます(127.0.0.1 だけで待ち受け、既定のビルドに入っています)。",
   "s5.phone_alt": "スマホの画面の中の tapi",
 
   // [6] house rules
@@ -98,9 +99,9 @@ window.PEKOE_COPY.ja = {
   "s6.pr3": "パッケージマネージャやフレームワークについて、pekoe は何も知りません。設定に書くのはそのリポジトリでいつも打っているコマンドで、pekoe は変数を埋めて上から順に実行します。",
   "s6.pr4": "ターミナル層は tmux で動いています。判断はデーモンが受け持ち、クライアントは表示と入力しか持たないので、層を差し替えても機能は減りません。",
   "s6.daemon_h": "すべては pekoed を通る",
-  "s6.daemon": "TUI、CLI、Neovim、Chrome 拡張、MCP、Web UI は、どれも同じ API を叩く表示層です。機能を足すときは、デーモンを触れば済みます。",
+  "s6.daemon": "TUI、CLI、Neovim、Chrome 拡張、MCP、Web UI、ローカル GUI は、どれも同じ API を叩く表示層です。機能を足すときは、デーモンを触れば済みます。",
   "s6.daemon_alt": "三又の槍を持った、デーモン姿の tapi",
-  "s6.svg_aria": "pekoed と 6 つのクライアント、worktree ごとの pty の関係図",
+  "s6.svg_aria": "pekoed と 7 つのクライアント、worktree ごとの pty の関係図",
 
   // [7] install
   "s7.lead": "pekoe は macOS と Linux で動きます。Homebrew からインストールできます。Web UI を使うときは <code>make install WEB=1</code> でビルドするか、リリースの <code>_web</code> アーカイブを入れてください。",
