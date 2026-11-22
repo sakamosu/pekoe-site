@@ -24,11 +24,11 @@ vite.config.js ローカル開発サーバーと GitHub Pages 向けビルド(di
 | [2] a day | デモ動画、tapi に頼む → tapi が分けて任せる → 同居人が実装・独立レビュー → 受信箱 → 証拠を開く(ダッシュボードの工程表で `o`)→ あなたがマージ |
 | [3] tapi | 5 つの顔、統括役であること、tapi は書かない・マージしない |
 | [4] the house | 自分で手を入れるときの設備(worktree・待ちへの応答・差分レビュー・Chrome の要素選び・land) |
-| [5] anywhere | Web UI でスマホからできること(見る・答える・受信箱・tapi に頼む)と、TUI のダッシュボード |
+| [5] anywhere | Web UI でスマホからできること(見る・答える・受信箱・tapi に頼む。iPad の横向きにも一言)と、TUI のダッシュボード・ローカル GUI(`pekoe gui`) |
 | [6] house rules | 安全のきまりと設計の原則、pekoed の図 |
 | [7] install | 動作環境、GitHub へのリンク、インストール手順(Homebrew が最初。ソースからの `make install` と Web UI の `WEB=1` は別の道として) |
 
-機能の説明は pekoe 本体の docs(README・docs/orchestration.md・docs/tapi-chat.md・docs/web.md)に書かれていることだけにする。本体の docs で実装済みと書かれていない機能(設計中・後回しのもの)を「できる」と書かない。
+機能の説明は pekoe 本体の docs(README・docs/orchestration.md・docs/tapi-chat.md・docs/web.md・docs/gui.md)に書かれていることだけにする。本体の docs で実装済みと書かれていない機能(設計中・後回しのもの)を「できる」と書かない。
 
 ## 編集
 

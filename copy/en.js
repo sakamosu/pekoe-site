@@ -37,10 +37,10 @@ window.PEKOE_COPY.en = {
   "s2.inbox_alt": "tapi bringing you a letter from the inbox",
   "s2.rep.hello": "feat-csv is done, PR #131 is up.",
   "s2.rep.h1": "Needs your decision",
-  "s2.rep.d1": "· inbox #7: fix-invoice-pdf asks to rebuild the 1,204 invoice PDFs already issued (]a)",
+  "s2.rep.d1": "· inbox q7: fix-invoice-pdf asks to rebuild the 1,204 invoice PDFs already issued (]a)",
   "s2.rep.d2": "· PR #131 feat-csv can be merged (CI green, independent review passed, no conflicts)",
   "s2.rep.h2": "What I'm doing now",
-  "s2.rep.n1": "· waiting for your answer on #7",
+  "s2.rep.n1": "· waiting for your answer on q7",
   "s2.rep.h3": "In progress",
   "s2.rep.p1": "· fix-invoice-pdf  wait  layout fixed, waiting for approval to rebuild",
   "s2.rep.p2": "· feat-csv  PR #131  CSV export, 42 tests",
@@ -78,11 +78,12 @@ window.PEKOE_COPY.en = {
   // [5] anywhere
   "s5.h2": "From your phone, too: answer and ask.",
   "s5.lead": "Put the Web UI (an optional build, reachable only inside your Tailscale tailnet) on your iPhone's home screen, and this is what you can do when you're out.",
-  "s5.c1": "<strong>See</strong>: your sessions and their states, and each agent's screen. The Overview tab shows the summary and the pipeline (<code>impl → review → PR → CI → merge</code>).",
-  "s5.c2": "<strong>Answer</strong>: allow or deny permission prompts (with a confirmation first), and pick from a question's options with a keypad. You can send a quick message too.",
-  "s5.c3": "<strong>Decide</strong>: answer the inbox from the Inbox tab, with the facts and links first and the agent's words after.",
-  "s5.c4": "<strong>Ask</strong>: send tapi a message in tapi chat. A sheet shows the recipient and the full text before it goes (by default). Sending works only when you have limited devices with <code>allow_devices</code>.",
-  "s5.desk": "At the Mac, select the tapi row in the TUI for the dashboard: the inbox, the pipeline and your requests on one screen.",
+  "s5.c1": "<strong>See</strong>: a tab bar at the bottom switches between three screens: Now, Sessions and tapi. Now gathers what needs you, tapi's latest words, how your requests are going and what was merged, and the Flow you open from a request shows the pipeline (<code>impl → review → PR → CI → merge</code>). Sessions lists them by state, and you can read each agent's screen.",
+  "s5.c2": "<strong>Answer</strong>: allow or deny permission prompts (with a confirmation first), and pick from a question's options with a keypad. You can send a quick message too, with up to four photos or screenshots.",
+  "s5.c3": "<strong>Decide</strong>: open an inbox question from Now and answer it, with the facts and links first, the agent's words after, and a confirmation before it goes.",
+  "s5.c4": "<strong>Ask</strong>: send tapi a message from the tapi screen (tapi chat), images included. A sheet shows the recipient and the full text before it goes (by default). Sending works only when you have limited devices with <code>allow_devices</code>.",
+  "s5.ipad": "Turn an iPad sideways so it's at least 700px wide, and a rail with Now and Sessions appears on the left: Now in three columns, Sessions with the chat next to the list.",
+  "s5.desk": "At the Mac, select the tapi row in the TUI for the dashboard: the inbox, the pipeline and your requests on one screen. Or run <code>pekoe gui</code> to open the local GUI in the Mac's own browser (it listens on 127.0.0.1 only, and it's in the default build).",
   "s5.phone_alt": "tapi on a phone screen",
 
   // [6] house rules
@@ -97,9 +98,9 @@ window.PEKOE_COPY.en = {
   "s6.pr3": "pekoe knows nothing about package managers or frameworks. The config holds the commands you already type in that repo; pekoe fills in the variables and runs them top to bottom.",
   "s6.pr4": "The terminal layer runs on tmux. The daemon makes the decisions and clients only handle display and input, so a layer can be swapped without losing features.",
   "s6.daemon_h": "everything talks to pekoed",
-  "s6.daemon": "TUI, CLI, Neovim, the Chrome extension, MCP and the Web UI are all display layers hitting the same API. Adding a feature only means touching the daemon.",
+  "s6.daemon": "TUI, CLI, Neovim, the Chrome extension, MCP, the Web UI and the local GUI are all display layers hitting the same API. Adding a feature only means touching the daemon.",
   "s6.daemon_alt": "tapi dressed as a daemon, holding a trident",
-  "s6.svg_aria": "pekoed, its six clients, and one pty per worktree",
+  "s6.svg_aria": "pekoed, its seven clients, and one pty per worktree",
 
   // [7] install
   "s7.lead": "pekoe runs on macOS and Linux. You can install it with Homebrew. To use the Web UI, build with <code>make install WEB=1</code> or install the <code>_web</code> archive from a release.",
